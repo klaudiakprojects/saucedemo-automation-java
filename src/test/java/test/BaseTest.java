@@ -14,7 +14,7 @@ public class BaseTest {
     private String url = "https://www.saucedemo.com/";
 
     @BeforeClass
-    public void setupUp() {
+    public void setupChrome() {
         driver = new ChromeDriver();
         driver.get(url);
 
@@ -24,7 +24,7 @@ public class BaseTest {
     }
 
     @AfterClass
-    public void tearDown() {
+    public void closeBrowser() {
         driver.quit();
     }
 }

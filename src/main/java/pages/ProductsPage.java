@@ -8,4 +8,5 @@ public class ProductsPage extends BasePage {
         String currentUrl = driver.getCurrentUrl();
         return currentUrl.contains("/inventory.html");
     }
+
 }
